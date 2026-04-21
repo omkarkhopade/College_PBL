@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CS Department - Placements</title>
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f7fa;
+    }
+    header, footer {
+      background: #0d47a1;
+      color: white;
+      padding: 15px 0;
+      text-align: center;
+    }
+    nav {
+      background: #1976d2;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 600;
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background: #1565c0;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .placements-intro {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-bottom: 50px;
+    }
+    .stat-card {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      flex: 1 1 250px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .stat-card h2 {
+      font-size: 36px;
+      color: #0d47a1;
+      margin-bottom: 10px;
+    }
+    .stat-card p {
+      font-size: 18px;
+      color: #555;
+    }
+
+    .recruiters {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .recruiter-logos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .recruiter-logos img {
+      width: 100%;
+      height: 80px;
+      object-fit: contain;
+      background: white;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+
+    .success-stories {
+      margin-bottom: 50px;
+    }
+    .story {
+      background: white;
+      margin-bottom: 20px;
+      padding: 20px;
+      border-left: 5px solid #0d47a1;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    .story h3 {
+      margin: 0;
+      color: #0d47a1;
+    }
+    .story p {
+      margin: 10px 0 0;
+      color: #333;
+    }
+
+    .gallery {
+      text-align: center;
+      margin-top: 50px;
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .gallery-grid img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+    .gallery-grid img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+
+</head>
+<body>
+
+  <header>
+    <h1>Placements - Computer Science Department</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="faculty.html">Faculty</a>
+    <a href="research.html">Research</a>
+    <a href="placements.html">Placements</a>
+    <a href="events.html">Events</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main class="container">
+
+    <!-- Placement Introduction -->
+    <section class="placements-intro">
+      <h2>Empowering Careers</h2>
+      <p>Our department has a strong placement record with top recruiters and exceptional student achievements every year.</p>
+    </section>
+
+    <!-- Placement Stats -->
+    <section class="stats">
+      <div class="stat-card">
+        <h2>95%</h2>
+        <p>Placement Rate</p>
+      </div>
+      <div class="stat-card">
+        <h2>45+</h2>
+        <p>Top Recruiters</p>
+      </div>
+      <div class="stat-card">
+        <h2>12 LPA</h2>
+        <p>Highest Package</p>
+      </div>
+      <div class="stat-card">
+        <h2>5 LPA</h2>
+        <p>Average Package</p>
+      </div>
+    </section>
+
+    <!-- Recruiters Section -->
+    <section class="recruiters">
+      <h2>Our Top Recruiters</h2>
+      <div class="recruiter-logos">
+        <img src="images/TCS.png" alt="TCS">
+        <img src="images/infosys.png" alt="Infosys">
+        <img src="images/cognizant.jpg" alt="Cognizant">
+        <img src="images/wipro.png" alt="Wipro">
+        <img src="images/capegemini.jpg" alt="Capgemini">
+        <img src="images/techmahindra.png" alt="Tech Mahindra">
+        <!-- Add more logos as needed -->
+      </div>
+    </section>
+
+    <!-- Success Stories -->
+    <section class="success-stories">
+      <h2>Student Success Stories</h2>
+
+      <div class="story">
+        <h3>Atharva Kulkarni - Placed at Infosys</h3>
+        <p>"The rigorous academic training and placement preparation sessions helped me crack Infosys with ease!"</p>
+      </div>
+
+      <div class="story">
+        <h3>Shruti Patil - Placed at TCS Digital</h3>
+        <p>"The support from faculty members and coding clubs was instrumental in achieving my dream job at TCS Digital."</p>
+      </div>
+
+    </section>
+
+    <!-- Placement Photo Gallery -->
+    <section class="gallery">
+      <h2>Placement Drives & Events</h2>
+      <div class="gallery-grid">
+        <img src="images/placement1.jpg" alt="Placement Drive 1">
+        <img src="images/placement2.jpg" alt="Placement Drive 2">
+        <img src="images/offer.jpg" alt="Student Offers">
+        <img src="images/offer2.jpg" alt="Celebrations">
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Computer Science Department, APCEOR. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
